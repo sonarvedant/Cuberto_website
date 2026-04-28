@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+body::selection {
+    color: white;
+    background-color: black;
+}
+
+.main {
+    width: 100%;
+}
+
+.main {
+    /* Changed height to min-height so content isn't cut off on small screens */
+    min-height: 100vh;
+    padding: 20px; /* Changed margin to padding for better layout control */
+}
+
+/* --- Navigation --- */
+.nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.nav img {
+    width: 115px;
+}
+
+.rightnav {
+    gap: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.rightnav a {
+    text-decoration: none;
+    color: black; /* Added color to ensure visibility */
+    font-weight: 500;
+    font-size: 1.4vw;
+    letter-spacing: 1px;
+}
+
+/* --- Hero Section --- */
+.mainpage {
+    width: 100%;
+    margin-top: 20px;
+    padding: 5vw 11vw; /* Reduced top padding for better vertical balance */
+}
+
+.mainpage h1 {
+    font-weight: 400;
+    font-size: 1.4vw;
+    letter-spacing: -.08vw;
+}  
+
+.headings {
+    display: flex;
+    gap: 20px;
+    align-items: baseline;
+}
+
+.mainpage .headings h1 {
+    font-size: 7.5vw;
+    line-height: 1;
+    font-weight: 900;
+    color: transparent;
+    -webkit-text-stroke: 1px black; /* Increased slightly for better visibility */
+    transition: all ease 0.3s; /* Added smooth transition for hover */
+}
+
+#hov:hover, #hove:hover, #hover:hover {
+    color: black;
+    cursor: pointer;
+}
+
+/* --- Paragraph Section --- */
+.footpara {
+    padding: 2vw 11vw; /* Adjusted padding to sit closer to headings */
+}
+
+.footpara p {
+    font-size: 1.4vw;
+    line-height: 1.4;
+    letter-spacing: -.08vw;
+    font-weight: 400;
+}
+
+/* --- Featured Projects Section --- */
+#featured {
+    text-transform: uppercase; 
+    padding: 5vw 11vw; 
+}
+#features {
+    text-transform: uppercase;
+    padding: 5vw 11vw;  
+    line-height: 1;
+    font-weight: 400;
+    font-size: 1.6vw;
+    border-top: 3px solid gray; 
+}
+#featured h1 {
+    line-height: 1;
+    font-weight: 400;
+    font-size: 3vw;
+}
+
+#featured h1:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+#features h1:nth-child(2) {
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+}
+
+
+
+.secondpage{
+    width: 75%;
+    height: 90vh;
+    margin: 80px auto 0;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+
+#featured i{
+    font-size: 40px;
+}
+
+.leftsec{
+    height: 100%;
+    width: 50%;
+    
+    overflow: hidden;
+}
+.rightsec{
+    background-color: green;
+    height: 100%;
+    width: 50%;
+    overflow: hidden;
+    object-fit:cover;
+}
+
+.leftsecelem{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.leftsecelem h1{
+
+}
+.leftsecelem h2{
+    
+}
+.leftsecelem h3{
+    
+}
+
+button{
+    margin-top: 150px;
+    border-radius: 100px;
+    padding: 1.8vw 1.8vw;
+    border: 1px solid rgb(192, 185, 185);
+    font-size: 1.2vw;
+    color: rgb(128, 117, 117);
+    background-color: white;
+    letter-spacing: -0.1px;
+}
